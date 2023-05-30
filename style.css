@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center; 
+    align-items: center;
+}
+
+main{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+    margin:0 auto;
+    /* border: 1px solid black; */
+}
+
+main header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main header h1{
+    font-size: 1.5rem;
+}
+
+main header p a{
+    text-decoration: none;
+    color:hsl(219, 14%, 63%);
+}
+
+main header h1 span{
+    font-size: 1rem;
+    color:white;
+    padding: 0.2rem 0.6rem;
+    background-color: hsl(219, 85%, 26%);
+    border-radius: 0.5rem;
+}
+
+.all-notif{
+    font-size: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap:1.25rem;
+}
+
+.notif{
+    position: relative;
+    display: flex;
+    align-items: start;
+    gap:1.5rem;
+}
+
+.notif:nth-of-type(4){
+    align-items: start;
+}
+
+.info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap:0.2rem;
+}
+
+.info div{
+    margin: 0.5rem 1rem;
+    border: 1px solid hsl(226, 29%, 88%);
+    padding: 0.5rem;
+    color:hsl(219, 14%, 63%);
+}
+
+.chess{
+    margin: 0 0 0 auto;
+}
+.chess img{
+    width:3rem;
+}
+
+.dp-div img{
+    width: 3rem;
+}
+
+.info p{
+    color:hsl(219, 14%, 63%);
+}
+
+.name{
+    cursor: pointer;
+    font-weight: 700;
+    color: black;
+}
+
+.info p span:nth-of-type(2){
+    cursor: pointer;
+    color:hsl(219, 12%, 42%);
+    font-weight: 700;
+}
+
+
+.unread{
+    display: block;
+    margin: 0.4rem 0;
+    align-items: start;
+    width:8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color:hsl(1, 90%, 64%);
+}
+
+
+
+/* hover Effects */
+
+#markread:hover{
+    color:hsl(219, 85%, 26%);
+}
+
+.name:hover{
+    color:hsl(219, 85%, 26%);
+}
+
+.info p span:nth-of-type(2):hover{
+    color:hsl(219, 85%, 26%);
+}
+
+.info div:hover{
+    background-color: hsl(211, 68%, 94%);
+    cursor: pointer;
+}
+
+
+.attribution{
+    position: absolute;
+    bottom:3px;
+}
+
+
+@media screen and (max-width:662px){
+        html{
+            font-size: 14px;
+        }
+        .all-notif{
+            padding-inline: 0;
+        }
+
+        .notif{
+            gap: 0.5rem;
+        }
+        .attribution{
+            display: none;
+        }
+}
+
+@media screen and (max-width:480px){
+
+    main{
+        height: 100vh;
+    }
+}
+
